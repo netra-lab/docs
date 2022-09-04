@@ -24,7 +24,7 @@ const config = {
       {/* <meta name='twitter:image' content='https://nextra.vercel.app/og.png' /> */}
       <meta name='twitter:site:domain' content='docs.netra.live' />
       <meta name='twitter:url' content='https://docs.netra.live' />
-      <meta name='og:title' content='Nextra: Next.js static site generator' />
+      <meta name='og:title' content='Netra: decentralized music NFT platform' />
       {/*TODO! */}
       {/* <meta name='og:image' content='https://nextra.vercel.app/og.png' /> */}{' '}
       <meta name='apple-mobile-web-app-title' content='Netra' />
