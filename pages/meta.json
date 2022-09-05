@@ -1,3 +1,8 @@
 {
-  "index": "Introduction"
+  "index": "Introduction",
+  "netra.live": {
+    "title": "netra.live",
+    "type": "page",
+    "href": "https://netra.live"
+  }
 }
