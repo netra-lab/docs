@@ -1,6 +1,7 @@
 import Logo from './common/components/Logo'
 
 const config = {
+  projectLink: 'https://github.com/netra-lab',
   github: 'https://github.com/netra-lab',
   docsRepositoryBase: 'https://github.com/netra-lab/docs',
   titleSuffix: ' – Netra',
