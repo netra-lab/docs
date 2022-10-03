@@ -1,9 +1,11 @@
 import Logo from './common/components/Logo'
 
+const GITHUB_BASE_URL = 'https://github.com/netra-lab'
+
 const config = {
-  projectLink: 'https://github.com/netra-lab',
-  github: 'https://github.com/netra-lab',
-  docsRepositoryBase: 'https://github.com/netra-lab/docs',
+  projectLink: GITHUB_BASE_URL,
+  github: GITHUB_BASE_URL,
+  docsRepositoryBase: `${GITHUB_BASE_URL}/docs`,
   titleSuffix: ' – Netra',
   logo: <Logo />,
   head: () => (
