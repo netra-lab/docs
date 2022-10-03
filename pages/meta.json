@@ -1,5 +1,10 @@
 {
   "index": "Introduction",
+  "concepts": "Concepts",
+  "guides": "Guides",
+  "technical-reference": "Technical Reference",
+  "about": "About",
+  "resources": "Resources",
   "netra.live": {
     "title": "netra.live",
     "type": "page",
