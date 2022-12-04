@@ -1,0 +1,30 @@
+# Airdrop ($NTT)
+
+Netra Transitory Token (NTT) is a reward token for Netra NFT holders that can be exchanged for $NETRA token after Phase 2 with a fixed floor price of $0.002 USDC through our buy-back & burn mechanism.
+$NTT can only be generated from holding Netra NFT. If there are a lot of requests to buy $NTT directly, the team will make NTT available for trading on Uniswap.
+The amount of $NTT claimable by each wallet will be determined by 3 contributing factors:
+Total mint price
+The higher the mint price of total NFTs in a wallet, the more $NTT.
+Duration of NFT holding.
+The earlier a wallet holds Netra NFT, the more $NTT
+Whitelist minting
+Additional $NTT for whitelisted users who minted on the whitelist minting days.
+In recap, holders who minted more NFTs and collected the earliest drops will get the most benefit of getting more $NTT that later on can be exchanged to $NETRA token.
+
+## Calculation
+
+The acrued reward for each NFT is calculated using [cumulative function](#cummulative-function) that is based by the [base point](#base-point), which is influenced by the **fiat price of an NFT**. The **distribution will happen hourly** based on the duration of when and how long the NFT has been held after minting or last claim.
+
+### Base Point
+
+It is a constant value used for reward calculation. Simply the higher the Base Point, the higher the reward is — same for the opposite.
+
+The value is different according to what token used for minting:
+
+1. **USDC**: The value is generated from the sale price (in USDC) at mint time using Chainlink’s OCR.
+
+2. **IDR**: The point is calculated by the price (in IDR) divided by 14,500
+
+### Cummulative Function
+
+It is a function that calculates how much NTT will be rewarded. The f(x, base) is crafted to incentivise the ealiest minter and loyal holder. After 14 days, the reward is set to a constant 1% from base point.
