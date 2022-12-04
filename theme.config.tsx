@@ -3,8 +3,9 @@ import Logo from './common/components/Logo'
 const GITHUB_BASE_URL = 'https://github.com/netra-lab'
 
 const config = {
-  projectLink: GITHUB_BASE_URL,
-  github: GITHUB_BASE_URL,
+  project: {
+    link: GITHUB_BASE_URL,
+  },
   docsRepositoryBase: `${GITHUB_BASE_URL}/docs`,
   titleSuffix: ' – Netra',
   logo: <Logo />,
@@ -47,16 +48,24 @@ const config = {
       />
     </>
   ),
-  banner:
-    '🚧 This is a work-in-progress docs for Netra, content may be incomplete or inaccurate.',
-  search: true,
-  prevLinks: true,
-  nextLinks: true,
-  footer: true,
-  footerEditLink: 'Edit this page on GitHub',
-  footerText: `© ${new Date().getFullYear()} Netra.`,
-  floatTOC: true,
-  defaultMenuCollapsed: true,
+  banner: {
+    content:
+      '🚧 This is a work-in-progress docs for Netra, content may be incomplete or inaccurate.',
+  },
+  navigation: {
+    prev: true,
+    next: true,
+  },
+  footer: {
+    editLink: 'Edit this page on GitHub',
+    text: `© ${new Date().getFullYear()} Netra.`,
+  },
+  toc: {
+    float: true,
+  },
+  sidebar: {
+    defaultMenuCollapsed: true,
+  },
 }
 
 export default config
